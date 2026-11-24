@@ -13,6 +13,8 @@ spec:
       labels:
         app: boardgame
     spec:
+      imagePullSecrets:
+        - name: k8-docker
       containers:
         - name: boardgame
           image: ht14388341/boardgame:latest # Image that will be used to containers in the cluster
